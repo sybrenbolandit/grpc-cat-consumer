@@ -1,0 +1,13 @@
+micronaut:
+  application:
+    name: grpc-cat-consumer
+  server:
+    port: 8080
+
+grpc:
+  channels:
+    cat:
+      address: 'localhost:50051'
+      plaintext: true
+      max-retry-attempts: 1
+
